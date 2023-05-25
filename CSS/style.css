@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 120%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+
+    h1, h2, h3{
+        margin-bottom: 0.2em;
+        letter-spacing: 0.15em;
+        font-weight: 200;
+
+    }
+    .container{
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .lg-heading{
+        font-size: 2rem;
+    }
+    .md-heading{
+        font-size: 1.5rem;
+    }
+    .text-red{
+        color: #e63946;
+    }
+    .text-light{
+        color: #f4f4f4;
+
+    }
+    .text-black{
+        color: #333;
+    }
+    .text-gray{
+        color: #555;
+    }
+    .bg-dark{
+        background-color: #233238;
+    }
+    .btn{
+        display: inline-block;
+        padding: 0.5em 1.5em;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0.5em 0;
+    }
+    .btn-primary{
+        background-color: #fff;
+        border-radius: 10em;
+    }
+    .btn-primary:hover{
+        background-color: #fff;
+    }
+    .btn-secondary{
+      border-radius: 5em;
+      border: 2px solid #e63946;
+    }
+    .btn-secondary:hover{
+        background-color: #fcf3;
+    }
+
+
+
+.header{
+    position: relative;
+    height: 95vh;
+
+background:linear-gradient(rgba(133, 116, 116, 0.5),rgba(0,0,0,0.5)), url(..//IMG/adrian-ra-aZXUY0SnFto-unsplash.jpg);
+background-position: center;
+background-size: cover;
+ background-repeat: no-repeat;
+}
+.navbar{
+   
+    padding: 1rem;
+}
+ .navbar .logo ,
+ .navbar a{
+    color: white;
+}    
+ .navbar .logo{
+    float: left;
+}
+ .navbar .nav-item{
+    float: right;
+    margin-top: 1rem;
+}
+  .navbar .nav-item{
+     display: inline-block;
+     padding: 1rem;
+  text-transform: uppercase;
+}
+.navbar  a:hover{
+border-bottom: 1px solid #fff;
+}
+.navbar::after{content: "";
+display: block;
+clear: both;
+}
+.header-content{
+    position: absolute;
+    text-align: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:linear-gradient(rgba(133, 116, 116, 0.2),rgba(0,0,0,0.2))
+}
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.header-content p{
+    text-transform: uppercase;
+    font-weight: 200;
+}
+/* #########Showcase section styling################# */
+.showcase{
+    background: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 350px;
+    
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row1{
+    margin-bottom:  10rem;
+}
+.row1 .img-box , .row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box , .row1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+   
+    height: 100%;
+}
+.row .text-box{
+
+    padding: 1rem;
+    
+}
+.row .img-box img{
+    display: inline-block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+/* ###################### features section ############# */
+.features{
+    padding: 10rem 0rem;
+}
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px  rgba(0, 0, 0, 0.11);
+}
+
+.box{
+    width: 33.3333333%;
+    float: left;
+   
+    padding: 2rem;
+    text-align: center;
+}
+.box-1 , .box-3{
+    background-color: #233238;
+    color: #fff;
+}
+.box-2{
+    background-color: red;
+    color: #fff;
+    
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ################## footer styling ############## */
+.footer{
+    background-color: #233238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.social-media-links i{
+    margin: 2rem;
+}
+/* #############About style#########3 */
+.aboout{
+    padding: 5rem 0;
+}
+.about-heading{
+    border-bottom: 5px solid #e63946;
+    
+}
+/* #############about wrapper style######### */
+.about-wrapper{
+    text-align: center;
+}
+.about-wrapper .left {
+    float: left;
+    width: 50%;
+
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+.about-wrapper{
+    content: "";
+    display: block;
+    clear: both;
+} 
+.about-wrapper li::before{
+    content: "\2713";
+    color: #e63946;
+    padding: 1rem;
+    font-weight: bold;
+}
+.count{
+    
+}
+.countitem{
+    
+    float: left;
+    width: 25%;
+    text-align: center;
+
+}
+.count::after{
+    content: "";
+    display: block;
+    clear:left;
+}
+.countitem span{
+    font-family: bold;
+    font-size: 3rem;
+    color: #e63946;
+}
+.countitem p{
+    font-weight: bold;
+}
+.cta-banner{
+     background-color: red;
+     color: #f4f4f4;
+     padding: 1rem;
+     box-shadow: 5px 5px 10px #000;
+}
+.cta-banner-left{
+    width: 60%;
+    float:left;
+}
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: 4px solid white;
+    color: white;
+}
+/* ##################contact page style############ */
+.contact-form{
+    padding: 5rem 0;
+    font-size: 2rem;
+    background-color: #f7f7f7;
+}
+
+
+ .form-wrapper .company-address{
+     background:#fff;
+    border: 4px dotted green;
+    width: 49%;
+    float: left ;
+
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+    
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+ .form-wrapper .form{
+     background:#fff;
+    border: 4px dotted black;
+    width:  49%;
+    float: right;
+
+}
+.form-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
